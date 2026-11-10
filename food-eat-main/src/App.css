@@ -1,0 +1,25 @@
+@import "tailwindcss";
+
+@layer components {
+    .primary-btn {
+     background-color: #ff6b35;
+     color: white;
+     font-weight: bold;
+     padding: 8px 16px;
+     border-radius: 9999px;
+    }
+
+    .secondary-btn {
+        background-color: #d1d5db;
+        color: white;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 9999px;
+    }
+}
+
+@layer utilities {
+    .img-shadow {
+        filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    }
+}
