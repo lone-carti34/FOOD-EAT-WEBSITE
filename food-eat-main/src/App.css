@@ -1,12 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @layer components {
     .primary-btn {
-     background-color: #ff6b35;
-     color: white;
-     font-weight: bold;
-     padding: 8px 16px;
-     border-radius: 9999px;
+        background-color: #ff6b35;
+        color: white;
+        font-weight: bold;
+        padding: 8px 16px;
+        border-radius: 9999px;
     }
 
     .secondary-btn {
@@ -21,5 +22,50 @@
 @layer utilities {
     .img-shadow {
         filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+    }
+}
+
+/* Custom theme configuration */
+@theme {
+    /* Custom primary color */
+    --color-primary: #f97316;
+
+    /* Custom font family */
+    --font-sans: "Poppins", sans-serif;
+
+    /* Custom slow spin animation */
+    --animate-spin-slow: spin 20s linear infinite;
+
+    /* Custom keyframes */
+    @keyframes spin {
+        from {
+            transform: rotate(0deg);
+        }
+
+        to {
+            transform: rotate(360deg);
+        }
+    }
+}
+
+/* Container configuration */
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+
+    @media (width >=40rem) {
+        padding-inline: 2rem;
+    }
+
+    @media (width >=64rem) {
+        padding-inline: 4rem;
+    }
+
+    @media (width >=80rem) {
+        padding-inline: 5rem;
+    }
+
+    @media (width >=96rem) {
+        padding-inline: 6rem;
     }
 }

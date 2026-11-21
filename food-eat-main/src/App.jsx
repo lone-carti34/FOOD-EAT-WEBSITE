@@ -2,6 +2,9 @@ import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import BgImage from "./assets/2.png";
 import Hero from "./components/Hero/Hero";
+import TopList from "./components/TopList/TopList";
+import Banner from "./Components/Banner/Banner";
+
 
 const bgStyle = {
   backgroundImage: `url(${BgImage})`,
@@ -14,11 +17,11 @@ const App = () => {
   return (
     <div style={bgStyle} className="overflow-x-hidden">
       <div className="min-h-screen bg-white/50 backdrop-blur-3xl" >
-      <Navbar />
-      
+        <Navbar />
+        <Hero />
+        <TopList />
+        <Banner />
       </div>
-    
-
     </div>
   )
 }
