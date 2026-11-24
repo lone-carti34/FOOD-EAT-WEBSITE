@@ -4,6 +4,7 @@ import BgImage from "./assets/2.png";
 import Hero from "./components/Hero/Hero";
 import TopList from "./components/TopList/TopList";
 import Banner from "./Components/Banner/Banner";
+import OurServices from "./Components/OurServices/OurServices";
 
 
 const bgStyle = {
@@ -21,6 +22,7 @@ const App = () => {
         <Hero />
         <TopList />
         <Banner />
+        <OurServices />
       </div>
     </div>
   )
